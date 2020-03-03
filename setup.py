@@ -6,7 +6,7 @@ from os.path import join, dirname
 setup(
     name='tests_rais',
     version=tests_rais.__version__,
-    packages=find_packages(),
+    packages=find_packages(include=['analysis.report']),
     url='https://github.com/vden68/tests_rais',
     license='',
     author='Vasiliy Denisov',

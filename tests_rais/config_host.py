@@ -1,8 +1,5 @@
 __author__ = 'v.denisov'
 
-import allure
-from tests_rais.reguest import RegustsHelper as rh
-
 
 class ConfigHost():
 
