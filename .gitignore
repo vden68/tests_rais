@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#test
+/tests/test_rais/conftest2.py
+.idea/
+/ptst_swagger/tests.json
+/tests/test_rais/tests.json
+/tests/tests.json
