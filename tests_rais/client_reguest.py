@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 __author__ = 'v.denisov'
 
 import allure
@@ -7,52 +6,9 @@ from tests_rais.config_host import ConfigHost as config
 from tests_rais.reguest import RegustsHelper as rh
 
 class ClientReguest():
-    """
-    Проверка
-    """
 
     def __init__(self):
         pass
-
-
-    @classmethod
-    @allure.step('set url_host')
-    def set_url_host(self, url_host):
-        """
-
-        :param url_host:
-        """
-        config.url_host = url_host
-
-    @classmethod
-    @allure.step('get url_host')
-    def get_url_host(self):
-        """
-
-        :return: Возращает url хоста
-        :rtype: str
-        """
-        return config.url_host
-
-    @classmethod
-    @allure.step('set cookies')
-    def set_cookies(self, cookies):
-        config.cookies = cookies
-
-    @classmethod
-    @allure.step('get cookies')
-    def get_cookies(self):
-        return config.cookies
-
-    @classmethod
-    @allure.step('set headers')
-    def set_headers(self, headers):
-        config.headers = headers
-
-    @classmethod
-    @allure.step('get headers')
-    def get_headers(self):
-        return config.headers
 
     @classmethod
     def setting_parameters(cls, url, paths, cookies, headers):

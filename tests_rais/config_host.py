@@ -7,6 +7,7 @@ class ConfigHost():
         self._url_host = None
         self._cookies = None
         self._headers = None
+        self._prefix = None
 
     @property
     def url_host(self):
@@ -31,3 +32,11 @@ class ConfigHost():
     @headers.setter
     def set_headers(self, value):
         self._headers = value
+
+    @property
+    def prefix(self):
+        return self._prefix
+
+    @prefix.setter
+    def set_prefix(self, value):
+        self._prefix = value
